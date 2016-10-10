@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/3.0/plugin-install.dtd">
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>GameTracker Plugin</name>
+	<author>Vitaliy Zhukov</author>
+	<creationDate>Oct 2016</creationDate>
+	<copyright>Vitaliy Zhukov 2016. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@aunited.ru</authorEmail>
+	<authorUrl>http://aunited.ru/youtube</authorUrl>
+	<version>1.3.1</version>
+	<description>
+	<![CDATA[<p>Using this plugin,insert gametracker banners to your joomla site]]>
+	</description>
+	<files>
+		<filename plugin="gametracker">gametracker.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="width" type="text" default="425" label="Width" description="Width of the YouTube video. Default width is 425 pixels." />
+				<field name="height" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
+                <field name="confidence" type="radio" class="btn-group btn-group-yesno" default="0" label="High confidence" description="High confidence mode.">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+                <field name="fullscreen" type="radio" class="btn-group btn-group-yesno" default="1" label="Allow fullscreen" description="Allow fullscreen">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="gametracker"><![CDATA[http://help.aunited.ru/gametracker/update/gametracker-update.xml]]></server>
+	</updateservers>
+</extension>
