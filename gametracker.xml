@@ -19,13 +19,23 @@
 		<fields name="params">
 			<fieldset name="GameTracker">
 				<!--350 banner init-->
-				<field name="style350" type="text" default="custom" label="Banner Style" description="350px banner style." />
+				<field name="style350" type="list" default="custom" label="Banner Style" description="350px banner style.">
+					<option value="red">Red</option>
+					<option value="orange">Orange</option>
+					<option value="green">Green</option>
+					<option value="blue">Blue</option>
+					<option value="custom">Custom</option>
+				</field>
 				<field name="topc350" type="color" default="#692108" label="Top color" description="350 banner style." />
 				<field name="btmc350" type="color" default="#381007" label="Bottom color" description="350 banner style." />
 				<field name="fntc350" type="text" default="#ffffff" label="Font color" description="350 banner style." />
 				<field name="bdrc350" type="text" default="#000000" label="Border color" description="Width of the YouTube video. Default width is 425 pixels." />
 				<!--160 banner init-->
-				<field name="style160" type="text" default="gray" label="Banner Style" description="160px banner style." />
+				<field name="style160" type="list" default="gray" label="Banner Style" description="160px banner style.">
+					<option value="gray">Gray</option>
+					<option value="red">Red</option>
+					<option value="custom">Custom</option>
+				</field>
 				<field name="fntc160" type="color" default="#ffffff" label="Font color" description="160px banner font color" />
 				<field name="ttlc160" type="color" default="#c5c5c5" label="Title color" description="160px banner title color" />
 				<field name="namec160" type="color" default="#ffffff" label="Server name color" description="160px banner server name color" />
@@ -43,7 +53,14 @@
                     <option value="1">JYes</option>
                 </field>
 				<!--Html banner init-->
-				<field name="style240" type="text" default="grey" label="Banner Style" description="HTML banner style." />
+				<field name="style240" type="list" default="gray" label="Banner Style" description="HTML banner style.">
+					<option value="gray">Gray</option>
+					<option value="blue">Blue</option>
+					<option value="orange">Orange</option>
+					<option value="white">White</option>
+					<option value="camo">Camo</option>
+					<option value="custom">Custom</option>
+				</field>
 				<field name="bgdc240" type="color" default="#333333" label="Background color" description="HTML banner background color" />
 				<field name="fntc240" type="color" default="#cccccc" label="Font color" description="HTML banner font color" />
 				<field name="tbgc240" type="color" default="#222222" label="Title background color" description="HTML banner title background color" />
