@@ -142,7 +142,6 @@ class plgContentGameTracker extends JPlugin
         $border_link_color = strtoupper($border_link_color);
 
         $wight = $params->get('color', 240);
-        $height = $params->get('color', 164);
         $map_screenshot = $params->get('color', '1');
         $online_players = $params->get('color', '1');
         $online_players_height = $params->get('color', 100);
@@ -155,6 +154,13 @@ class plgContentGameTracker extends JPlugin
         if($wight < 144) $wight =144; // min sizes
         if($online_players_height < 100) $online_players_height = 100;
         if($top_players_height < 100) $online_players_height = 100;
+
+        $height = 164;
+        if($map_screenshot) $height += 124;
+        if($top_players) $height += 24 + $top_players_height;
+        if($online_players) $height += 24 + $online_players_height;
+        if($blog) $height += 124;
+        $height = settype($height, "string");
 
         switch ($color) {
             case 'custom':
