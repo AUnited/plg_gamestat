@@ -24,6 +24,16 @@ class plgContentGameTracker extends JPlugin
         }
 		return true;
 	}
+	function ColorNormalise($color, $case)
+    {
+        $color=ltrim($color, "#");
+        switch($case)
+        {
+            case 'up': $color = strtoupper($color); break;
+            case 'down': $color = strtolower($color); break;
+        }
+        return $color;
+    }
 
 	function GameBigBanner($sAddr)
     {
@@ -70,8 +80,7 @@ class plgContentGameTracker extends JPlugin
 
         $color = $params->get('style160', 'gray');
         $font_color = $params->get('fntc160', '#ffffff');
-        $font_color = ltrim($font_color, "#");
-        $font_color = strtolower($font_color);
+        $font_color = $this->ColorNormalise($font_color, 'down');
         $title_color = $params->get('ttlc160', '#c5c5c5');
         $title_color = ltrim($title_color, "#");
         $title_color = strtolower($title_color);
