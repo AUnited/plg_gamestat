@@ -28,43 +28,65 @@ class plgContentGameTracker extends JPlugin
 	}
 
 	function GameBigBanner($sAddr)
-	{
-	 	$params = $this->params;
-
-		$width = $params->get('width', 425);
-		$height = $params->get('height', 344);
-
+    {
 		return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/b_560_95_1.png" border="0" width="560" height="95" alt="'.$sAddr.' Big banner"/></a>';
     }
 
-    function GameBanner($gCode)
+    function GameBanner($sAddr)
     {
+        #var init
         $params = $this->params;
 
-        $width = $params->get('width', 425);
-        $height = $params->get('height', 344);
-//red
-        return '<a href="http://www.gametracker.com/server_info/1.1.1.1:00000/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/1.1.1.1:00000/b_350_20_692108_381007_FFFFFF_000000.png" border="0" width="350" height="20" alt=""/></a>';
-//orange
-        b_350_20_FFAD41_E98100_000000_591F11
+        $color = $params->get('color', 'custom'); //color preset
+        $top_color = $params->get('color', '692108');
+        $font_color = $params->get('color', 'FFFFFF');
+        $bottom_color = $params->get('color', '381007');
+        $border_color = $params->get('color', '000000');
+
+        #logic
+    switch ($color)
+        {
+        case 'red':
+            $image = 'b_350_20_692108_381007_FFFFFF_000000.png';
+            break;
+        case 'orange':
+            $image = 'b_350_20_FFAD41_E98100_000000_591F11.png';
+            break;
+        case 'green':
+            $image = 'b_350_20_5A6C3E_383F2D_D2E1B5_2E3226.png';
+            break;
+        case 'blue':
+            $image = 'b_350_20_323957_202743_F19A15_111111.png';
+            break;
+        case 'custom':
+            $image = 'b_350_20_'.$top_color.'_'.$bottom_color.'_'.$font_color.'_'.$border_color.'.png';
+            break;
+        }
+            return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/'.$image.'" border="0" width="350" height="20" alt="GT '.$sAddr.' '.$color.' game banner"/></a>';
     }
-    function GameBlock($gCode)
+
+    function GameBlock($sAddr)
     {
+        #var init
         $params = $this->params;
 
-        $width = $params->get('width', 425);
-        $height = $params->get('height', 344);
+        $color = $params->get('color', 'red');
+
+        #logic
 //red
-        return '<a href="http://www.gametracker.com/server_info/1.1.1.1:00000/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/1.1.1.1:00000/b_160_400_1_ffffff_c5c5c5_ffffff_000000_0_1_0.png" border="0" width="160" height="248" alt=""/></a>/></a>';
+        return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/b_160_400_1_ffffff_c5c5c5_ffffff_000000_0_1_0.png" border="0" width="160" height="248" alt=""/></a>/></a>';
     }
-    function GameHtmlBlock($gCode)
+
+    function GameHtmlBlock($sAddr)
     {
+        #var init
         $params = $this->params;
 
-        $width = $params->get('width', 425);
-        $height = $params->get('height', 344);
+        $color = $params->get('color', 'red');
 
-        return '<iframe src="http://cache.www.gametracker.com/components/html0/?host=1.1.1.1:00000&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240" frameborder="0" scrolling="no" width="240" height="536"></iframe>';
+        #logic
+
+        return '<iframe src="http://cache.www.gametracker.com/components/html0/?host='.$sAddr.'&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240" frameborder="0" scrolling="no" width="240" height="536"></iframe>';
 
     }
 }
