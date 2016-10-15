@@ -131,22 +131,22 @@ class plgContentGameTracker extends JPlugin
 
         switch ($color) {
             case 'custom':
-                $option = '&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                $option = '&bgColor='.$bg_color.'&fontColor='.$font_color.'&titleBgColor='.$title_bg_color.'&titleColor='.$title_color.'&borderColor='.$border_color.'&linkColor='.$link_color.'&borderLinkColor='.$border_link_color.'&showMap='.$map_screenshot.'&currentPlayersHeight='.$online_players_height.'&showCurrPlayers='.$online_players.'&topPlayersHeight='.$top_players_height.'&showTopPlayers='.$top_players.'&showBlogs='.$blog.'&width='.$wight;
                 break;
             case 'gray':
-                $option = '&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                $option = '&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap='.$map_screenshot.'&currentPlayersHeight='.$online_players_height.'&showCurrPlayers='.$online_players.'&topPlayersHeight='.$top_players_height.'&showTopPlayers='.$top_players.'&showBlogs='.$blog.'&width='.$wight.;
                 break;
             case 'blue':
-                $option = '&bgColor=1F2642&fontColor=8790AE&titleBgColor=11172D&titleColor=FFFFFF&borderColor=333333&linkColor=FF9900&borderLinkColor=999999&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                $option = '&bgColor=1F2642&fontColor=8790AE&titleBgColor=11172D&titleColor=FFFFFF&borderColor=333333&linkColor=FF9900&borderLinkColor=999999&showMap='.$map_screenshot.'&currentPlayersHeight='.$online_players_height.'&showCurrPlayers='.$online_players.'&topPlayersHeight='.$top_players_height.'&showTopPlayers='.$top_players.'&showBlogs='.$blog.'&width='.$wight.;
                 break;
             case 'orange':
-                $option = '&bgColor=FF9900&fontColor=000000&titleBgColor=FF7700&titleColor=000000&borderColor=000000&linkColor=06126A&borderLinkColor=FF7700&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                $option = '&bgColor=FF9900&fontColor=000000&titleBgColor=FF7700&titleColor=000000&borderColor=000000&linkColor=06126A&borderLinkColor=FF7700&showMap='.$map_screenshot.'&currentPlayersHeight='.$online_players_height.'&showCurrPlayers='.$online_players.'&topPlayersHeight='.$top_players_height.'&showTopPlayers='.$top_players.'&showBlogs='.$blog.'&width='.$wight.;
                 break;
             case 'white':
-                $option = '&bgColor=FFFFFF&fontColor=333333&titleBgColor=FFFFFF&titleColor=000000&borderColor=BBBBBB&linkColor=091858&borderLinkColor=5C5C5C&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                $option = '&bgColor=FFFFFF&fontColor=333333&titleBgColor=FFFFFF&titleColor=000000&borderColor=BBBBBB&linkColor=091858&borderLinkColor=5C5C5C&showMap='.$map_screenshot.'&currentPlayersHeight='.$online_players_height.'&showCurrPlayers='.$online_players.'&topPlayersHeight='.$top_players_height.'&showTopPlayers='.$top_players.'&showBlogs='.$blog.'&width='.$wight.;
                 break;
             case 'camo':
-                $option = '&bgColor=373E28&fontColor=D2E1B5&titleBgColor=2E3225&titleColor=FFFFFF&borderColor=3E4433&linkColor=889C63&borderLinkColor=828E6B&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                $option = '&bgColor=373E28&fontColor=D2E1B5&titleBgColor=2E3225&titleColor=FFFFFF&borderColor=3E4433&linkColor=889C63&borderLinkColor=828E6B&showMap='.$map_screenshot.'&currentPlayersHeight='.$online_players_height.'&showCurrPlayers='.$online_players.'&topPlayersHeight='.$top_players_height.'&showTopPlayers='.$top_players.'&showBlogs='.$blog.'&width='.$wight.;
                 break;
         }
         return '<iframe src="http://cache.www.gametracker.com/components/html0/?host='.$sAddr.$option.'" frameborder="0" scrolling="no" width="'.$wight.'" height="'.$height.'"></iframe>';
