@@ -68,22 +68,22 @@ class plgContentGameTracker extends JPlugin
         #var init
         $params = $this->params;
 
-        $color = $params->get('color', 'red');
-        $font_color = $params->get('color', '#ffffff');
+        $color = $params->get('style160', 'gray');
+        $font_color = $params->get('fntc160', '#ffffff');
         $font_color = ltrim($font_color, "#");
         $font_color = strtolower($font_color);
-        $title_color = $params->get('color', '#c5c5c5');
+        $title_color = $params->get('ttlc160', '#c5c5c5');
         $title_color = ltrim($title_color, "#");
         $title_color = strtolower($title_color);
-        $name_color = $params->get('color', '#ffffff');
+        $name_color = $params->get('namec160', '#ffffff');
         $name_color = ltrim($name_color, "#");
         $name_color = strtolower($name_color);
-        $bg_color = $params->get('color', '#ffffff');
+        $bg_color = $params->get('bgdc160', '#ffffff');
         $bg_color = ltrim($bg_color, "#");
         $bg_color = strtolower($bg_color);
-        $player_graph = $params->get('color', '1');
-        $top_players = $params->get('color', '1');
-        $map_screenshot = $params->get('color', '1');
+        $player_graph = $params->get('plgraph160', '1');
+        $top_players = $params->get('pltop160', '1');
+        $map_screenshot = $params->get('mapscr160', '1');
         $image='';
 
         #logic

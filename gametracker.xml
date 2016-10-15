@@ -25,11 +25,11 @@
 				<field name="fntc350" type="text" default="#ffffff" label="Font color" description="350 banner style." />
 				<field name="bdrc350" type="text" default="#000000" label="Border color" description="Width of the YouTube video. Default width is 425 pixels." />
 				<!--160 banner init-->
-				<field name="style160" type="text" default="grey" label="Banner Style" description="160px banner style." />
-				<field name="fntc160" type="color" default="344" label="Font color" description="160px banner font color" />
-				<field name="ttlc160" type="text" default="344" label="Title color" description="160px banner title color" />
-				<field name="namec160" type="text" default="344" label="Server name color" description="160px banner server name color" />
-				<field name="bgdc160" type="text" default="344" label="Border color" description="160px banner border color" />
+				<field name="style160" type="text" default="gray" label="Banner Style" description="160px banner style." />
+				<field name="fntc160" type="color" default="#ffffff" label="Font color" description="160px banner font color" />
+				<field name="ttlc160" type="text" default="#c5c5c5" label="Title color" description="160px banner title color" />
+				<field name="namec160" type="text" default="#ffffff" label="Server name color" description="160px banner server name color" />
+				<field name="bgdc160" type="text" default="#ffffff" label="Border color" description="160px banner border color" />
 				<field name="plgraph160" type="radio" class="btn-group btn-group-yesno" default="0" label="Player graph" description="Draw player graph on 160px banner">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
