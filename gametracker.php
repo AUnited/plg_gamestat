@@ -71,9 +71,27 @@ class plgContentGameTracker extends JPlugin
         $params = $this->params;
 
         $color = $params->get('color', 'red');
+        $font_color = $params->get('color', 'ffffff');
+        $title_color = $params->get('color', 'c5c5c5');
+        $name_color = $params->get('color', 'ffffff');
+        $bg_color = $params->get('color', 'ffffff');
+        $player_graph = $params->get('color', '1');;
+        $top_players = $params->get('color', '1');;
+        $map_screenshot = $params->get('color', '1');;
 
         #logic
-//red
+        switch ($color) {
+            case 'custom': //color id = 0
+                $image = 'b_160_400_0_'.$font_color.'_'.$title_color.'_'.$name_color.'_'.$bg_color.'_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
+                break;
+            case 'gray': //color id = 1
+                $image = 'b_160_400_1_ffffff_c5c5c5_ffffff_000000_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
+                break;
+            case 'red': //color id = 2
+                $image = 'b_160_400_2_ffffff_c5c5c5_ff9900_000000_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
+                break;
+        }
+        
         return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/b_160_400_1_ffffff_c5c5c5_ffffff_000000_0_1_0.png" border="0" width="160" height="248" alt=""/></a>/></a>';
     }
 
