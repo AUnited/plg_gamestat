@@ -75,16 +75,16 @@ class plgContentGameTracker extends JPlugin
         $title_color = $params->get('color', 'c5c5c5');
         $name_color = $params->get('color', 'ffffff');
         $bg_color = $params->get('color', 'ffffff');
-        $player_graph = $params->get('color', '1');;
-        $top_players = $params->get('color', '1');;
-        $map_screenshot = $params->get('color', '1');;
+        $player_graph = $params->get('color', '1');
+        $top_players = $params->get('color', '1');
+        $map_screenshot = $params->get('color', '1');
 
 
         #logic
         $height = 182; // wight = 160
-        if($player_graph) $height = $height + 66;
-        if($top_players) $height = $height + 82;
-        if($map_screenshot) $height = $height + 106;
+        if($player_graph) $height += 66;
+        if($top_players) $height += 82;
+        if($map_screenshot) $height += 106;
         settype($height, "string");
         switch ($color) {
             case 'custom': //color id = 0
@@ -107,10 +107,49 @@ class plgContentGameTracker extends JPlugin
         $params = $this->params;
 
         $color = $params->get('color', 'red');
+        $bg_color = $params->get('color', '333333');
+        $font_color = $params->get('color', 'CCCCCC');
+        $title_bg_color = $params->get('color', '222222');
+        $title_color = $params->get('color', 'FF9900');
+        $border_color = $params->get('color', '555555');
+        $link_color = $params->get('color', 'red');
+        $border_link_color = $params->get('color', 'red');
+        $wight = $params->get('color', 240);
+        $height = $params->get('color', 'red');
+        $map_screenshot = $params->get('color', '1');
+        $online_players = $params->get('color', '1');
+        $online_players_height = $params->get('color', 100);
+        $top_players = $params->get('color', '1');
+        $top_players_height = $params->get('color', 100);
+        $blog = $params->get('color', '1');
+
 
         #logic
+        if($wight < 144) $wight =144; // min sizes
+        if($online_players_height < 100) $online_players_height = 100;
+        if($top_players_height < 100) $online_players_height = 100;
 
-        return '<iframe src="http://cache.www.gametracker.com/components/html0/?host='.$sAddr.'&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240" frameborder="0" scrolling="no" width="240" height="536"></iframe>';
+        switch ($color) {
+            case 'custom':
+                $option = '&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                break;
+            case 'gray':
+                $option = '&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                break;
+            case 'blue':
+                $option = '&bgColor=1F2642&fontColor=8790AE&titleBgColor=11172D&titleColor=FFFFFF&borderColor=333333&linkColor=FF9900&borderLinkColor=999999&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                break;
+            case 'orange':
+                $option = '&bgColor=FF9900&fontColor=000000&titleBgColor=FF7700&titleColor=000000&borderColor=000000&linkColor=06126A&borderLinkColor=FF7700&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                break;
+            case 'white':
+                $option = '&bgColor=FFFFFF&fontColor=333333&titleBgColor=FFFFFF&titleColor=000000&borderColor=BBBBBB&linkColor=091858&borderLinkColor=5C5C5C&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                break;
+            case 'camo':
+                $option = '&bgColor=373E28&fontColor=D2E1B5&titleBgColor=2E3225&titleColor=FFFFFF&borderColor=3E4433&linkColor=889C63&borderLinkColor=828E6B&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=240';
+                break;
+        }
+        return '<iframe src="http://cache.www.gametracker.com/components/html0/?host='.$sAddr.$option.'" frameborder="0" scrolling="no" width="'.$wight.'" height="'.$height.'"></iframe>';
 
     }
 }
