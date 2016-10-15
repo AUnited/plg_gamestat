@@ -9,7 +9,6 @@ jimport( 'joomla.plugin.plugin' );
 #GameTracker Content Plugin
 class plgContentGameTracker extends JPlugin
 {
-
 	function PluginGameTracker( &$subject, $params )
 	{
 		parent::__construct( $subject, $params );
@@ -23,7 +22,6 @@ class plgContentGameTracker extends JPlugin
 		{
             $article->text = preg_replace_callback('|{gametracker}(.*){\/gametracker}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
         }
-
 		return true;
 	}
 
@@ -79,7 +77,6 @@ class plgContentGameTracker extends JPlugin
         $top_players = $params->get('color', '1');
         $map_screenshot = $params->get('color', '1');
 
-
         #logic
         $height = 182; // wight = 160
         if($player_graph) $height += 66;
@@ -97,7 +94,6 @@ class plgContentGameTracker extends JPlugin
                 $image = 'b_160_400_2_ffffff_c5c5c5_ff9900_000000_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
                 break;
         }
-
         return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/'.$image.'" border="0" width="160" height="'.$height.'" alt=""/></a>/></a>';
     }
 
@@ -122,7 +118,6 @@ class plgContentGameTracker extends JPlugin
         $top_players = $params->get('color', '1');
         $top_players_height = $params->get('color', 100);
         $blog = $params->get('color', '1');
-
 
         #logic
         if($wight < 144) $wight =144; // min sizes
@@ -150,6 +145,5 @@ class plgContentGameTracker extends JPlugin
                 break;
         }
         return '<iframe src="http://cache.www.gametracker.com/components/html0/?host='.$sAddr.$option.'" frameborder="0" scrolling="no" width="'.$wight.'" height="'.$height.'"></iframe>';
-
     }
 }
