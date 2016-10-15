@@ -69,20 +69,30 @@ class plgContentGameTracker extends JPlugin
         $params = $this->params;
 
         $color = $params->get('color', 'red');
-        $font_color = $params->get('color', 'ffffff');
-        $title_color = $params->get('color', 'c5c5c5');
-        $name_color = $params->get('color', 'ffffff');
-        $bg_color = $params->get('color', 'ffffff');
+        $font_color = $params->get('color', '#ffffff');
+        $font_color = ltrim($font_color, "#");
+        $font_color = strtolower($font_color);
+        $title_color = $params->get('color', '#c5c5c5');
+        $title_color = ltrim($title_color, "#");
+        $title_color = strtolower($title_color);
+        $name_color = $params->get('color', '#ffffff');
+        $name_color = ltrim($name_color, "#");
+        $name_color = strtolower($name_color);
+        $bg_color = $params->get('color', '#ffffff');
+        $bg_color = ltrim($bg_color, "#");
+        $bg_color = strtolower($bg_color);
         $player_graph = $params->get('color', '1');
         $top_players = $params->get('color', '1');
         $map_screenshot = $params->get('color', '1');
+        $image='';
 
         #logic
         $height = 182; // wight = 160
         if($player_graph) $height += 66;
         if($top_players) $height += 82;
         if($map_screenshot) $height += 106;
-        settype($height, "string");
+        $height = settype($height, "string");
+
         switch ($color) {
             case 'custom': //color id = 0
                 $image = 'b_160_400_0_'.$font_color.'_'.$title_color.'_'.$name_color.'_'.$bg_color.'_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
@@ -103,13 +113,34 @@ class plgContentGameTracker extends JPlugin
         $params = $this->params;
 
         $color = $params->get('color', 'red');
-        $bg_color = $params->get('color', '333333');
-        $font_color = $params->get('color', 'CCCCCC');
+        $bg_color = $params->get('color', '#333333');
+        $bg_color = ltrim($bg_color, "#");
+        $bg_color = strtoupper($bg_color);
+
+        $font_color = $params->get('color', '#cccccc');
+        $font_color = ltrim($font_color, "#");
+        $font_color = strtoupper($font_color);
+
         $title_bg_color = $params->get('color', '222222');
-        $title_color = $params->get('color', 'FF9900');
+        $title_bg_color = ltrim($title_bg_color, "#");
+        $title_bg_color = strtoupper($title_bg_color);
+
+        $title_color = $params->get('color', '#ff9900');
+        $title_color = ltrim($title_color, "#");
+        $title_color = strtoupper($title_color);
+
         $border_color = $params->get('color', '555555');
+        $border_color = ltrim($border_color, "#");
+        $border_color = strtoupper($border_color);
+
         $link_color = $params->get('color', 'red');
+        $link_color = ltrim($link_color, "#");
+        $link_color = strtoupper($link_color);
+
         $border_link_color = $params->get('color', 'red');
+        $border_link_color = ltrim($border_link_color, "#");
+        $border_link_color = strtoupper($border_link_color);
+
         $wight = $params->get('color', 240);
         $height = $params->get('color', 'red');
         $map_screenshot = $params->get('color', '1');
@@ -118,6 +149,7 @@ class plgContentGameTracker extends JPlugin
         $top_players = $params->get('color', '1');
         $top_players_height = $params->get('color', 100);
         $blog = $params->get('color', '1');
+        $option='';
 
         #logic
         if($wight < 144) $wight =144; // min sizes
