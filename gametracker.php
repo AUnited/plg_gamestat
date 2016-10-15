@@ -79,7 +79,13 @@ class plgContentGameTracker extends JPlugin
         $top_players = $params->get('color', '1');;
         $map_screenshot = $params->get('color', '1');;
 
+
         #logic
+        $height = 182; // wight = 160
+        if($player_graph) $height = $height + 66;
+        if($top_players) $height = $height + 82;
+        if($map_screenshot) $height = $height + 106;
+        settype($height, "string");
         switch ($color) {
             case 'custom': //color id = 0
                 $image = 'b_160_400_0_'.$font_color.'_'.$title_color.'_'.$name_color.'_'.$bg_color.'_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
@@ -91,8 +97,8 @@ class plgContentGameTracker extends JPlugin
                 $image = 'b_160_400_2_ffffff_c5c5c5_ff9900_000000_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
                 break;
         }
-        
-        return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/b_160_400_1_ffffff_c5c5c5_ffffff_000000_0_1_0.png" border="0" width="160" height="248" alt=""/></a>/></a>';
+
+        return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/b_160_400_1_ffffff_c5c5c5_ffffff_000000_0_1_0.png" border="0" width="160" height="'.$height.'" alt=""/></a>/></a>';
     }
 
     function GameHtmlBlock($sAddr)
