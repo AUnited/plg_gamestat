@@ -8,7 +8,7 @@
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>info@aunited.ru</authorEmail>
 	<authorUrl>http://aunited.ru/youtube</authorUrl>
-	<version>1.3.1</version>
+	<version>0.1</version>
 	<description>
 	<![CDATA[<p>Using this plugin,insert gametracker banners to your joomla site]]>
 	</description>
@@ -17,17 +17,58 @@
 	</files>
 	<config>
 		<fields name="params">
-			<fieldset name="basic">
-				<field name="width" type="text" default="425" label="Width" description="Width of the YouTube video. Default width is 425 pixels." />
+			<fieldset name="GameTracker">
+				<!--350 banner init-->
+				<field name="style350" type="text" default="custom" label="Banner Style" description="350px banner style." />
+				<field name="topc350" type="color" default="#692108" label="Top color" description="350 banner style." />
+				<field name="btmc350" type="color" default="#381007" label="Bottom color" description="350 banner style." />
+				<field name="fntc350" type="text" default="#ffffff" label="Font color" description="350 banner style." />
+				<field name="bdrc350" type="text" default="#000000" label="Border color" description="Width of the YouTube video. Default width is 425 pixels." />
+				<!--160 banner init-->
+				<field name="style160" type="text" default="grey" label="Banner Style" description="160px banner style." />
+				<field name="fntc160" type="color" default="344" label="Font color" description="160px banner font color" />
+				<field name="ttlc160" type="text" default="344" label="Title color" description="160px banner title color" />
+				<field name="namec160" type="text" default="344" label="Server name color" description="160px banner server name color" />
+				<field name="bgdc160" type="text" default="344" label="Border color" description="160px banner border color" />
+				<field name="plgraph160" type="radio" class="btn-group btn-group-yesno" default="0" label="Player graph" description="Draw player graph on 160px banner">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="pltop160" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Show player's top">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+                <field name="mapscr160" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Show map screenshot">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+				<!--Html banner init-->
+				<field name="style240" type="text" default="grey" label="Banner Style" description="HTML banner style." />
+				<field name="bgdc240" type="color" default="344" label="Font color" description="Height of the YouTube video. Default height is 344 pixels." />
+				<field name="fntc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
+				<field name="tbgc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
+				<field name="ttlc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
+				<field name="bdrc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
+				<field name="lnkc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
+				<field name="blkc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
+				<field name="wight" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
 				<field name="height" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-                <field name="confidence" type="radio" class="btn-group btn-group-yesno" default="0" label="High confidence" description="High confidence mode.">
-                    <option value="0">JNo</option>
-                    <option value="1">JYes</option>
-                </field>
-                <field name="fullscreen" type="radio" class="btn-group btn-group-yesno" default="1" label="Allow fullscreen" description="Allow fullscreen">
-                    <option value="0">JNo</option>
-                    <option value="1">JYes</option>
-                </field>
+				<field name="plgraph240" type="radio" class="btn-group btn-group-yesno" default="0" label="Player graph" description="High confidence mode.">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="plats240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Allow fullscreen">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="pltop240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Allow fullscreen">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="mapscr240" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Allow fullscreen">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
 			</fieldset>
 		</fields>
 	</config>
