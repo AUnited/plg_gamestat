@@ -44,28 +44,30 @@
                 </field>
 				<!--Html banner init-->
 				<field name="style240" type="text" default="grey" label="Banner Style" description="HTML banner style." />
-				<field name="bgdc240" type="color" default="344" label="Font color" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="fntc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="tbgc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="ttlc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="bdrc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="lnkc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="blkc240" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="wight" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="height" type="text" default="344" label="Height" description="Height of the YouTube video. Default height is 344 pixels." />
-				<field name="plgraph240" type="radio" class="btn-group btn-group-yesno" default="0" label="Player graph" description="High confidence mode.">
+				<field name="bgdc240" type="color" default="#333333" label="Background color" description="HTML banner background color" />
+				<field name="fntc240" type="color" default="#cccccc" label="Font color" description="HTML banner font color" />
+				<field name="tbgc240" type="color" default="#222222" label="Title background color" description="HTML banner title background color" />
+				<field name="ttlc240" type="color" default="#ff9900" label="Title color" description="HTML banner title color" />
+				<field name="bdrc240" type="color" default="#555555" label="Border color" description="HTML banner border color" />
+				<field name="lnkc240" type="color" default="#ffcc00" label="Link color" description="HTML banner link color" />
+				<field name="blkc240" type="color" default="#222222" label="Border link color" description="HTML banner border link color" />
+				<field name="wight" type="text" default="240" label="Widght" description="HTML banner wight (at least 140px)" />
+
+				<field name="blog240" type="radio" class="btn-group btn-group-yesno" default="1" label="Resent blog" description="Show resent blog descriptions">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="plats240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Allow fullscreen">
+				<field name="plonline240" type="radio" class="btn-group btn-group-yesno" default="1" label="Online players" description="Show players online">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="pltop240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Allow fullscreen">
+				<field name="onlh240" type="text" default="100" label="Height" description="Height of the online players block (at least 100)" />
+				<field name="pltop240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Show player's top ">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="mapscr240" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Allow fullscreen">
+				<field name="toph240" type="text" default="164" label="Height" description="Height of the top players block (at least 100)" />
+				<field name="mapscr240" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Show map screenshot">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>

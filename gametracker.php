@@ -112,7 +112,7 @@ class plgContentGameTracker extends JPlugin
         #var init
         $params = $this->params;
 
-        $color = $params->get('color', 'red');
+        $color = $params->get('color', 'gray');
         $bg_color = $params->get('color', '#333333');
         $bg_color = ltrim($bg_color, "#");
         $bg_color = strtoupper($bg_color);
@@ -121,7 +121,7 @@ class plgContentGameTracker extends JPlugin
         $font_color = ltrim($font_color, "#");
         $font_color = strtoupper($font_color);
 
-        $title_bg_color = $params->get('color', '222222');
+        $title_bg_color = $params->get('color', '#222222');
         $title_bg_color = ltrim($title_bg_color, "#");
         $title_bg_color = strtoupper($title_bg_color);
 
@@ -129,20 +129,20 @@ class plgContentGameTracker extends JPlugin
         $title_color = ltrim($title_color, "#");
         $title_color = strtoupper($title_color);
 
-        $border_color = $params->get('color', '555555');
+        $border_color = $params->get('color', '#555555');
         $border_color = ltrim($border_color, "#");
         $border_color = strtoupper($border_color);
 
-        $link_color = $params->get('color', 'red');
+        $link_color = $params->get('color', '#ffcc00');
         $link_color = ltrim($link_color, "#");
         $link_color = strtoupper($link_color);
 
-        $border_link_color = $params->get('color', 'red');
+        $border_link_color = $params->get('color', '#222222');
         $border_link_color = ltrim($border_link_color, "#");
         $border_link_color = strtoupper($border_link_color);
 
         $wight = $params->get('color', 240);
-        $height = $params->get('color', 'red');
+        $height = $params->get('color', 164);
         $map_screenshot = $params->get('color', '1');
         $online_players = $params->get('color', '1');
         $online_players_height = $params->get('color', 100);
