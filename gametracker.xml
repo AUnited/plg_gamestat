@@ -42,9 +42,9 @@
 				<!--160 banner init-->
 				<field name="note160" type="note" label="AU_PLG_GT_160_BANNER" />
 				<field name="style160" type="list" default="gray" label="AU_PLG_GT_BANNER_STYLE" description="AU_PLG_GT_BANNER_STYLE_160_DESC">
-					<option value="gray">Gray</option>
-					<option value="red">Red</option>
-					<option value="custom">Custom</option>
+					<option value="gray">COLOR_GRAY</option>
+					<option value="red">COLOR_RED</option>
+					<option value="custom">COLOR_CUSTOM</option>
 				</field>
 				<field name="fntc160" type="color" default="#ffffff" label="AU_PLG_GT_FONT_COLOR" description="AU_PLG_GT_FONT_COLOR_160_DESC" />
 				<field name="ttlc160" type="color" default="#c5c5c5" label="AU_PLG_GT_TITLE_COLOR" description="AU_PLG_GT_TITLE_COLOR_160_DESC" />
@@ -65,12 +65,12 @@
 				<!--Html banner init-->
 				<field name="note240" type="note" label="AU_PLG_GT_HTML_BANNER" />
 				<field name="style240" type="list" default="gray" label="AU_PLG_GT_BANNER_STYLE" description="AU_PLG_GT_BANNER_STYLE_HTML_DESC">
-					<option value="gray">Gray</option>
-					<option value="blue">Blue</option>
-					<option value="orange">Orange</option>
-					<option value="white">White</option>
-					<option value="camo">Camo</option>
-					<option value="custom">Custom</option>
+					<option value="gray">COLOR_GRAY</option>
+					<option value="blue">COLOR_BLUE</option>
+					<option value="orange">COLOR_ORANGE</option>
+					<option value="white">COLOR_WHITE</option>
+					<option value="camo">COLOR_CAMO</option>
+					<option value="custom">COLOR_CUSTOM</option>
 				</field>
 				<field name="bgdc240" type="color" default="#333333" label="AU_PLG_GT_BACKGROUND_COLOR" description="AU_PLG_GT_BACKGROUND_COLOR_HTML_DESC" />
 				<field name="fntc240" type="color" default="#cccccc" label="AU_PLG_GT_FONT_COLOR" description="AU_PLG_GT_FONT_COLOR_HTML_DESC" />
