@@ -17,7 +17,7 @@
 	</files>
 	<config>
 		<fields name="params">
-			<fieldset name="GameTracker">
+			<fieldset name="basic">
 				<!--350 banner init-->
 				<field name="style350" type="list" default="custom" label="Banner Style" description="350px banner style.">
 					<option value="red">Red</option>
