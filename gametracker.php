@@ -192,8 +192,8 @@ class plgContentGameTracker extends JPlugin
 
         $height = 164;
         if($map_screenshot) $height += 124;
-        if($top_players) $height = $height + 24 + $top_players_height;
-        if($online_players) $height = $height + 24 + $online_players_height;
+        if($top_players) $height += 24 + $top_players_height;
+        if($online_players) $height += 24 + $online_players_height;
         if($blog) $height += 124;
         settype($height, "string");
 
