@@ -13,8 +13,15 @@
 	<![CDATA[<p>Using this plugin, insert gametracker banners to your joomla site]]>
 	</description>
 	<files>
+        <folder>language</folder>
 		<filename plugin="gametracker">gametracker.php</filename>
 	</files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_gametracker.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_gametracker.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.plg_gametracker.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.plg_gametracker.sys.ini</language>
+    </languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
