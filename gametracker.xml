@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE extension PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/3.0/plugin-install.dtd">
-<extension version="2.5" type="plugin" group="content" method="upgrade">
+<extension version="3.2" type="plugin" group="content" method="upgrade">
 	<name>GameTracker Plugin</name>
 	<author>Vitaliy Zhukov</author>
 	<creationDate>Oct 2016</creationDate>
@@ -19,6 +19,7 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<!--350 banner init-->
+				<field name="note350" type="note" label="350 pixel banner" />
 				<field name="style350" type="list" default="custom" label="Banner Style" description="350px banner style.">
 					<option value="red">Red</option>
 					<option value="orange">Orange</option>
@@ -31,6 +32,7 @@
 				<field name="fntc350" type="text" default="#ffffff" label="Font color" description="350 banner style." />
 				<field name="bdrc350" type="text" default="#000000" label="Border color" description="Width of the YouTube video. Default width is 425 pixels." />
 				<!--160 banner init-->
+				<field name="note350" type="note" label="160 pixel banner" />
 				<field name="style160" type="list" default="gray" label="Banner Style" description="160px banner style.">
 					<option value="gray">Gray</option>
 					<option value="red">Red</option>
@@ -53,6 +55,7 @@
                     <option value="1">JYes</option>
                 </field>
 				<!--Html banner init-->
+				<field name="note240" type="note" label="HTML banner" />
 				<field name="style240" type="list" default="gray" label="Banner Style" description="HTML banner style.">
 					<option value="gray">Gray</option>
 					<option value="blue">Blue</option>
