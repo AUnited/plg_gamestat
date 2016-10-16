@@ -1,10 +1,20 @@
-# YouTube plugin for Joomla
-Allows you to add Youtube videos to your content
+# Gametracker plugin for Joomla
+Allows you to add statistic game banners to your Joomla comtent
+
+**Supports:**
+
+*Gametracker.com*
 
 Use tags
  
-**{youtube}video_id{/youtube}**
+**{gt}ip:port{/gt}**
 
-**{youpl}playlist_id{/youpl}**
+**{gt=big}ip:port{/gt}**
 
-To include video to your article 
+**{gt=banner}ip:port{/gt}**
+
+**{gt=block}ip:port{/gt}**
+
+**{gt=html}ip:port{/gt}**
+
+To include banner to your article 
