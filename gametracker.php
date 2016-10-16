@@ -126,7 +126,7 @@ class plgContentGameTracker extends JPlugin
         if($player_graph) $height += 66;
         if($top_players) $height += 82;
         if($map_screenshot) $height += 106;
-        #$height = settype($height, "string");
+        settype($height, "string");
 
         switch ($color) {
             case 'custom': //color id = 0
@@ -195,7 +195,7 @@ class plgContentGameTracker extends JPlugin
         if($top_players) $height = $height + 24 + $top_players_height;
         if($online_players) $height = $height + 24 + $online_players_height;
         if($blog) $height += 124;
-        #$height = settype($height, "string");
+        settype($height, "string");
 
         switch ($color) {
             case 'custom':
