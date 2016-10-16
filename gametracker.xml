@@ -68,7 +68,7 @@
 				<field name="bdrc240" type="color" default="#555555" label="Border color" description="HTML banner border color" />
 				<field name="lnkc240" type="color" default="#ffcc00" label="Link color" description="HTML banner link color" />
 				<field name="blkc240" type="color" default="#222222" label="Border link color" description="HTML banner border link color" />
-				<field name="wight240" type="text" default="240" label="Widght" description="HTML banner wight (at least 140px)" />
+				<field name="wight240" type="integer" default="240" label="Widght" first="140" last="999" step="1" description="HTML banner wight (at least 140px)" />
 
 				<field name="blog240" type="radio" class="btn-group btn-group-yesno" default="1" label="Resent blog" description="Show resent blog descriptions">
 					<option value="0">JNo</option>
@@ -78,12 +78,12 @@
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="onlh240" type="text" default="100" label="Height" description="Height of the online players block (at least 100)" />
+				<field name="onlh240" type="integer" default="100" label="Height" first="100" last="999" step="1" description="Height of the online players block (at least 100)" />
 				<field name="pltop240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Show player's top ">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="toph240" type="text" default="164" label="Height" description="Height of the top players block (at least 100)" />
+				<field name="toph240" type="integer" default="164" label="Height" first="140" last="999" step="1" description="Height of the top players block (at least 100)" />
 				<field name="mapscr240" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Show map screenshot">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
