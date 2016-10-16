@@ -17,4 +17,4 @@ Use tags
 
 **{gt=html}ip:port{/gt}**
 
-To include banner to your article 
+To include banner to your article
