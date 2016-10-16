@@ -30,17 +30,17 @@ class plgContentGameTracker extends JPlugin
 
         if ( JString::strpos( $article->text, '{gt=banner}'))
         {
-            $article->text = preg_replace_callback('|{gt=banner}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+            $article->text = preg_replace_callback('|{gt=banner}(.*){\/gt}|',function ($match){return $this->GameBanner($match[1]);}, $article->text);
         }
 
         if ( JString::strpos( $article->text, '{gt=block}'))
         {
-            $article->text = preg_replace_callback('|{gt=block}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+            $article->text = preg_replace_callback('|{gt=block}(.*){\/gt}|',function ($match){return $this->GameBlock($match[1]);}, $article->text);
         }
 
         if ( JString::strpos( $article->text, '{gt=html}'))
         {
-            $article->text = preg_replace_callback('|{gt=html}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+            $article->text = preg_replace_callback('|{gt=html}(.*){\/gt}|',function ($match){return $this->GameHtmlBlock($match[1]);}, $article->text);
         }
 
 
