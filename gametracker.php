@@ -139,7 +139,7 @@ class plgContentGameTracker extends JPlugin
                 $image = 'b_160_400_2_ffffff_c5c5c5_ff9900_000000_'.$map_screenshot.'_'.$player_graph.'_'.$top_players.'.png';
                 break;
         }
-        return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/'.$image.'" border="0" width="160" height="'.$height.'" alt=""/></a>/></a>';
+        return '<a href="http://www.gametracker.com/server_info/'.$sAddr.'/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/'.$sAddr.'/'.$image.'" border="0" width="160" height="'.$height.'" alt=""/></a>';
     }
 
     function GameHtmlBlock($sAddr)
