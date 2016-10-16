@@ -32,7 +32,7 @@
 				<field name="fntc350" type="text" default="#ffffff" label="Font color" description="350 banner style." />
 				<field name="bdrc350" type="text" default="#000000" label="Border color" description="Width of the YouTube video. Default width is 425 pixels." />
 				<!--160 banner init-->
-				<field name="note350" type="note" label="160 pixel banner" />
+				<field name="note160" type="note" label="160 pixel banner" />
 				<field name="style160" type="list" default="gray" label="Banner Style" description="160px banner style.">
 					<option value="gray">Gray</option>
 					<option value="red">Red</option>
