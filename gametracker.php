@@ -108,14 +108,11 @@ class plgContentGameTracker extends JPlugin
         $font_color = $params->get('fntc160', '#ffffff');
         $font_color = $this->ColorNormalise($font_color, 'down');
         $title_color = $params->get('ttlc160', '#c5c5c5');
-        $title_color = ltrim($title_color, "#");
-        $title_color = strtolower($title_color);
+        $title_color = $this->ColorNormalise($title_color, 'down');
         $name_color = $params->get('namec160', '#ffffff');
-        $name_color = ltrim($name_color, "#");
-        $name_color = strtolower($name_color);
+        $name_color = $this->ColorNormalise($name_color, 'down');
         $bg_color = $params->get('bgdc160', '#ffffff');
-        $bg_color = ltrim($bg_color, "#");
-        $bg_color = strtolower($bg_color);
+        $bg_color = $this->ColorNormalise($bg_color, 'down');
         $player_graph = $params->get('plgraph160', '1');
         $top_players = $params->get('pltop160', '1');
         $map_screenshot = $params->get('mapscr160', '1');
@@ -149,32 +146,25 @@ class plgContentGameTracker extends JPlugin
 
         $color = $params->get('color', 'gray');
         $bg_color = $params->get('bgdc240', '#333333');
-        $bg_color = ltrim($bg_color, "#");
-        $bg_color = strtoupper($bg_color);
+        $bg_color = $this->ColorNormalise($bg_color, 'up');
 
         $font_color = $params->get('fntc240', '#cccccc');
-        $font_color = ltrim($font_color, "#");
-        $font_color = strtoupper($font_color);
+        $font_color = $this->ColorNormalise($font_color, 'up');
 
         $title_bg_color = $params->get('tbgc240', '#222222');
-        $title_bg_color = ltrim($title_bg_color, "#");
-        $title_bg_color = strtoupper($title_bg_color);
+        $title_bg_color = $this->ColorNormalise($title_bg_color, 'up');
 
         $title_color = $params->get('ttlc240', '#ff9900');
-        $title_color = ltrim($title_color, "#");
-        $title_color = strtoupper($title_color);
+        $title_color = $this->ColorNormalise($title_color, 'up');
 
         $border_color = $params->get('bdrc240', '#555555');
-        $border_color = ltrim($border_color, "#");
-        $border_color = strtoupper($border_color);
+        $border_color = $this->ColorNormalise($border_color, 'up');
 
         $link_color = $params->get('lnkc240', '#ffcc00');
-        $link_color = ltrim($link_color, "#");
-        $link_color = strtoupper($link_color);
+        $link_color = $this->ColorNormalise($link_color, 'up');
 
         $border_link_color = $params->get('blkc240', '#222222');
-        $border_link_color = ltrim($border_link_color, "#");
-        $border_link_color = strtoupper($border_link_color);
+        $border_link_color = $this->ColorNormalise($border_link_color, 'up');
 
         $wight = $params->get('wight240', 240);
         $map_screenshot = $params->get('color', '1');
