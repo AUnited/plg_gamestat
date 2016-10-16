@@ -81,12 +81,12 @@
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="onlh240" type="integer" default="100" label="Height" first="100" last="999" step="10" description="Height of the online players block (at least 100)" />
+				<field name="onlh240" type="integer" default="100" label="Online block height" first="100" last="999" step="10" description="Height of the online players block (at least 100)" />
 				<field name="pltop240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Show player's top ">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="toph240" type="integer" default="164" label="Height" first="140" last="999" step="10" description="Height of the top players block (at least 100)" />
+				<field name="toph240" type="integer" default="100" label="Top block height" first="100" last="999" step="10" description="Height of the top players block (at least 100)" />
 				<field name="mapscr240" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Show map screenshot">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
