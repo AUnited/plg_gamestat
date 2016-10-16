@@ -15,6 +15,7 @@
 	<files>
         <folder>language</folder>
 		<filename plugin="gametracker">gametracker.php</filename>
+        <filename>index.html</filename>
 	</files>
     <languages>
         <language tag="en-GB">language/en-GB/en-GB.plg_gametracker.ini</language>
