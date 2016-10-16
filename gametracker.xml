@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE extension PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/3.0/plugin-install.dtd">
 <extension version="3.2" type="plugin" group="content" method="upgrade">
-	<name>GameTracker Plugin</name>
+	<name>AU_PLG_GAMETRACKER</name>
 	<author>Vitaliy Zhukov</author>
 	<creationDate>Oct 2016</creationDate>
 	<copyright>Vitaliy Zhukov 2016. All rights reserved.</copyright>
@@ -18,17 +18,17 @@
         <filename>index.html</filename>
 	</files>
     <languages>
-        <language tag="en-GB">language/en-GB/en-GB.plg_gametracker.ini</language>
-        <language tag="en-GB">language/en-GB/en-GB.plg_gametracker.sys.ini</language>
-        <language tag="ru-RU">language/ru-RU/ru-RU.plg_gametracker.ini</language>
-        <language tag="ru-RU">language/ru-RU/ru-RU.plg_gametracker.sys.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_content_gametracker.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_content_gametracker.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_gametracker.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_gametracker.sys.ini</language>
     </languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<!--350 banner init-->
 				<field name="note350" type="note" label="350 pixel banner" />
-				<field name="style350" type="list" default="custom" label="Banner Style" description="350px banner style.">
+				<field name="style350" type="list" default="custom" label="AU_PLG_GT_BANNER_STYLE" description="AU_PLG_GT_BANNER_STYLE_350_DESC">
 					<option value="red">Red</option>
 					<option value="orange">Orange</option>
 					<option value="green">Green</option>
