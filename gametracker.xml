@@ -29,11 +29,11 @@
 				<!--350 banner init-->
 				<field name="note350" type="note" label="AU_PLG_GT_350_BANNER" />
 				<field name="style350" type="list" default="custom" label="AU_PLG_GT_BANNER_STYLE" description="AU_PLG_GT_BANNER_STYLE_350_DESC">
-					<option value="red">Red</option>
-					<option value="orange">Orange</option>
-					<option value="green">Green</option>
-					<option value="blue">Blue</option>
-					<option value="custom">Custom</option>
+					<option value="red">COLOR_RED</option>
+					<option value="orange">COLOR_ORANGE</option>
+					<option value="green">COLOR_GREEN</option>
+					<option value="blue">COLOR_BLUE</option>
+					<option value="custom">COLOR_CUSTOM</option>
 				</field>
 				<field name="topc350" type="color" default="#692108" label="AU_PLG_GT_TOP_COLOR" description="AU_PLG_GT_TOP_COLOR_350_DESC" />
                 <field name="btmc350" type="color" default="#381007" label="AU_PLG_GT_BOTTOM_COLOR" description="AU_PLG_GT_BOTTOM_COLOR_350_DESC" />
