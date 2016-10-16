@@ -14,15 +14,37 @@ class plgContentGameTracker extends JPlugin
 		parent::__construct( $subject, $params );
 	}
 
-	function onContentPrepare ( $context, &$article, &$params, $page = 0)
+    function onContentPrepare ($context, &$article, &$params, $page = 0)
 		{
 		global $mainframe;
 
-		if ( JString::strpos( $article->text, '{gametracker}'))
+		if ( JString::strpos( $article->text, '{gt}')) //B.B. Alias
 		{
-            $article->text = preg_replace_callback('|{gametracker}(.*){\/gametracker}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+            $article->text = preg_replace_callback('|{gt}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
         }
-		return true;
+
+        if ( JString::strpos( $article->text, '{gt=big}'))
+        {
+            $article->text = preg_replace_callback('|{gt=big}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+        }
+
+        if ( JString::strpos( $article->text, '{gt=banner}'))
+        {
+            $article->text = preg_replace_callback('|{gt=banner}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+        }
+
+        if ( JString::strpos( $article->text, '{gt=block}'))
+        {
+            $article->text = preg_replace_callback('|{gt}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+        }
+
+        if ( JString::strpos( $article->text, '{gt=html}'))
+        {
+            $article->text = preg_replace_callback('|{gt=html}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+        }
+
+
+        return true;
 	}
 	function ColorNormalise($color, $case)
     {
