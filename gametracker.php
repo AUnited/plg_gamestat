@@ -122,41 +122,41 @@ class plgContentGameTracker extends JPlugin
         $params = $this->params;
 
         $color = $params->get('color', 'gray');
-        $bg_color = $params->get('color', '#333333');
+        $bg_color = $params->get('bgdc240', '#333333');
         $bg_color = ltrim($bg_color, "#");
         $bg_color = strtoupper($bg_color);
 
-        $font_color = $params->get('color', '#cccccc');
+        $font_color = $params->get('fntc240', '#cccccc');
         $font_color = ltrim($font_color, "#");
         $font_color = strtoupper($font_color);
 
-        $title_bg_color = $params->get('color', '#222222');
+        $title_bg_color = $params->get('tbgc240', '#222222');
         $title_bg_color = ltrim($title_bg_color, "#");
         $title_bg_color = strtoupper($title_bg_color);
 
-        $title_color = $params->get('color', '#ff9900');
+        $title_color = $params->get('ttlc240', '#ff9900');
         $title_color = ltrim($title_color, "#");
         $title_color = strtoupper($title_color);
 
-        $border_color = $params->get('color', '#555555');
+        $border_color = $params->get('bdrc240', '#555555');
         $border_color = ltrim($border_color, "#");
         $border_color = strtoupper($border_color);
 
-        $link_color = $params->get('color', '#ffcc00');
+        $link_color = $params->get('lnkc240', '#ffcc00');
         $link_color = ltrim($link_color, "#");
         $link_color = strtoupper($link_color);
 
-        $border_link_color = $params->get('color', '#222222');
+        $border_link_color = $params->get('blkc240', '#222222');
         $border_link_color = ltrim($border_link_color, "#");
         $border_link_color = strtoupper($border_link_color);
 
-        $wight = $params->get('color', 240);
+        $wight = $params->get('wight240', 240);
         $map_screenshot = $params->get('color', '1');
-        $online_players = $params->get('color', '1');
-        $online_players_height = $params->get('color', 100);
-        $top_players = $params->get('color', '1');
-        $top_players_height = $params->get('color', 100);
-        $blog = $params->get('color', '1');
+        $online_players = $params->get('plonline240', '1');
+        $online_players_height = $params->get('onlh240', 100);
+        $top_players = $params->get('pltop240', '1');
+        $top_players_height = $params->get('toph240', 100);
+        $blog = $params->get('blog240', '1');
         $option='';
 
         #logic

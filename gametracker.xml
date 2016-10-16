@@ -68,7 +68,7 @@
 				<field name="bdrc240" type="color" default="#555555" label="Border color" description="HTML banner border color" />
 				<field name="lnkc240" type="color" default="#ffcc00" label="Link color" description="HTML banner link color" />
 				<field name="blkc240" type="color" default="#222222" label="Border link color" description="HTML banner border link color" />
-				<field name="wight" type="text" default="240" label="Widght" description="HTML banner wight (at least 140px)" />
+				<field name="wight240" type="text" default="240" label="Widght" description="HTML banner wight (at least 140px)" />
 
 				<field name="blog240" type="radio" class="btn-group btn-group-yesno" default="1" label="Resent blog" description="Show resent blog descriptions">
 					<option value="0">JNo</option>
