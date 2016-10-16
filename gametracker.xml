@@ -10,7 +10,7 @@
 	<authorUrl>http://aunited.ru/youtube</authorUrl>
 	<version>0.1</version>
 	<description>
-	<![CDATA[<p>Using this plugin, insert gametracker banners to your joomla site]]>
+	<![CDATA[<p>Using this plugin, insert <a href="http://gametracker.com">GameTracker</a> banners to your joomla content]]>
 	</description>
 	<files>
         <folder>language</folder>
