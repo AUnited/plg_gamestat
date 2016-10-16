@@ -35,7 +35,7 @@ class plgContentGameTracker extends JPlugin
 
         if ( JString::strpos( $article->text, '{gt=block}'))
         {
-            $article->text = preg_replace_callback('|{gt}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
+            $article->text = preg_replace_callback('|{gt=block}(.*){\/gt}|',function ($match){return $this->GameBigBanner($match[1]);}, $article->text);
         }
 
         if ( JString::strpos( $article->text, '{gt=html}'))
