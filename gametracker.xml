@@ -79,7 +79,7 @@
 				<field name="bdrc240" type="color" default="#555555" label="AU_PLG_GT_BORDER_COLOR" description="AU_PLG_GT_BORDER_COLOR_HTML_DESC" />
 				<field name="lnkc240" type="color" default="#ffcc00" label="AU_PLG_GT_LINK_COLOR" description="AU_PLG_GT_LINK_COLOR_HTML_DESC" />
 				<field name="blkc240" type="color" default="#222222" label="AU_PLG_GT_BORDER_LINK_COLOR" description="AU_PLG_GT_BORDER_LINK_COLOR_HTML_DESC" />
-				<field name="wight240" type="integer" default="240" label="Wight" first="140" last="999" step="10" description="HTML banner wight (at least 140px)" />
+				<field name="wight240" type="integer" default="240" label="AU_PLG_GT_WIDTH" first="140" last="999" step="10" description="AU_PLG_GT_WIDTH_HTML_DESC" />
 
 				<field name="blog240" type="radio" class="btn-group btn-group-yesno" default="1" label="AU_PLG_GT_SHOW_RESENT_BLOG_POSTS" description="AU_PLG_GT_SHOW_RESENT_BLOG_POSTS_HTML_DESC">
 					<option value="0">JNo</option>
