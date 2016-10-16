@@ -27,7 +27,7 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<!--350 banner init-->
-				<field name="note350" type="note" label="350 pixel banner" />
+				<field name="note350" type="note" label="AU_PLG_GT_350_BANNER" />
 				<field name="style350" type="list" default="custom" label="AU_PLG_GT_BANNER_STYLE" description="AU_PLG_GT_BANNER_STYLE_350_DESC">
 					<option value="red">Red</option>
 					<option value="orange">Orange</option>
@@ -35,36 +35,36 @@
 					<option value="blue">Blue</option>
 					<option value="custom">Custom</option>
 				</field>
-				<field name="topc350" type="color" default="#692108" label="Top color" description="350 banner style." />
-				<field name="btmc350" type="color" default="#381007" label="Bottom color" description="350 banner style." />
-				<field name="fntc350" type="color" default="#ffffff" label="Font color" description="350 banner style." />
-				<field name="bdrc350" type="color" default="#000000" label="Border color" description="Width of the YouTube video. Default width is 425 pixels." />
+				<field name="topc350" type="color" default="#692108" label="AU_PLG_GT_TOP_COLOR" description="AU_PLG_GT_TOP_COLOR_350_DESC" />
+                <field name="btmc350" type="color" default="#381007" label="AU_PLG_GT_BOTTOM_COLOR" description="AU_PLG_GT_BOTTOM_COLOR_350_DESC" />
+				<field name="fntc350" type="color" default="#ffffff" label="AU_PLG_GT_FONT_COLOR" description="AU_PLG_GT_BOTTOM_COLOR_350_DESC" />
+				<field name="bdrc350" type="color" default="#000000" label="AU_PLG_GT_BORDER_COLOR" description="AU_PLG_GT_BOTTOM_COLOR_350_DESC" />
 				<!--160 banner init-->
-				<field name="note160" type="note" label="160 pixel banner" />
-				<field name="style160" type="list" default="gray" label="Banner Style" description="160px banner style.">
+				<field name="note160" type="note" label="AU_PLG_GT_160_BANNER" />
+				<field name="style160" type="list" default="gray" label="AU_PLG_GT_BANNER_STYLE" description="AU_PLG_GT_BANNER_STYLE_160_DESC">
 					<option value="gray">Gray</option>
 					<option value="red">Red</option>
 					<option value="custom">Custom</option>
 				</field>
-				<field name="fntc160" type="color" default="#ffffff" label="Font color" description="160px banner font color" />
-				<field name="ttlc160" type="color" default="#c5c5c5" label="Title color" description="160px banner title color" />
-				<field name="namec160" type="color" default="#ffffff" label="Server name color" description="160px banner server name color" />
-				<field name="bgdc160" type="color" default="#ffffff" label="Border color" description="160px banner border color" />
-				<field name="plgraph160" type="radio" class="btn-group btn-group-yesno" default="0" label="Player graph" description="Draw player graph on 160px banner">
+				<field name="fntc160" type="color" default="#ffffff" label="AU_PLG_GT_FONT_COLOR" description="AU_PLG_GT_FONT_COLOR_160_DESC" />
+				<field name="ttlc160" type="color" default="#c5c5c5" label="AU_PLG_GT_TITLE_COLOR" description="AU_PLG_GT_TITLE_COLOR_160_DESC" />
+				<field name="namec160" type="color" default="#ffffff" label="AU_PLG_GT_SERVERNAME_COLOR" description="AU_PLG_GT_SERVERNAME_COLOR_160_DESC" />
+				<field name="bgdc160" type="color" default="#ffffff" label="AU_PLG_GT_BORDER_COLOR" description="AU_PLG_GT_BORDER_COLOR_160_DESC" />
+				<field name="plgraph160" type="radio" class="btn-group btn-group-yesno" default="0" label="AU_PLG_GT_SHOW_PLAYER_GRAPH" description="AU_PLG_GT_SHOW_PLAYER_GRAPH_160_DESC">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="pltop160" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Show player's top">
+				<field name="pltop160" type="radio" class="btn-group btn-group-yesno" default="1" label="AU_PLG_GT_SHOW_TOP_PLAYERS" description="AU_PLG_GT_SHOW_TOP_PLAYERS_160_DESC">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-                <field name="mapscr160" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Show map screenshot">
+                <field name="mapscr160" type="radio" class="btn-group btn-group-yesno" default="1" label="AU_PLG_GT_SHOW_MAP_SCREENSHOT" description="AU_PLG_GT_SHOW_MAP_SCREENSHOT_160_DESC">
                     <option value="0">JNo</option>
                     <option value="1">JYes</option>
                 </field>
 				<!--Html banner init-->
-				<field name="note240" type="note" label="HTML banner" />
-				<field name="style240" type="list" default="gray" label="Banner Style" description="HTML banner style.">
+				<field name="note240" type="note" label="AU_PLG_GT_HTML_BANNER" />
+				<field name="style240" type="list" default="gray" label="AU_PLG_GT_BANNER_STYLE" description="AU_PLG_GT_BANNER_STYLE_HTML_DESC">
 					<option value="gray">Gray</option>
 					<option value="blue">Blue</option>
 					<option value="orange">Orange</option>
@@ -72,30 +72,30 @@
 					<option value="camo">Camo</option>
 					<option value="custom">Custom</option>
 				</field>
-				<field name="bgdc240" type="color" default="#333333" label="Background color" description="HTML banner background color" />
-				<field name="fntc240" type="color" default="#cccccc" label="Font color" description="HTML banner font color" />
-				<field name="tbgc240" type="color" default="#222222" label="Title background color" description="HTML banner title background color" />
-				<field name="ttlc240" type="color" default="#ff9900" label="Title color" description="HTML banner title color" />
-				<field name="bdrc240" type="color" default="#555555" label="Border color" description="HTML banner border color" />
-				<field name="lnkc240" type="color" default="#ffcc00" label="Link color" description="HTML banner link color" />
-				<field name="blkc240" type="color" default="#222222" label="Border link color" description="HTML banner border link color" />
-				<field name="wight240" type="integer" default="240" label="Widght" first="140" last="999" step="10" description="HTML banner wight (at least 140px)" />
+				<field name="bgdc240" type="color" default="#333333" label="AU_PLG_GT_BACKGROUND_COLOR" description="AU_PLG_GT_BACKGROUND_COLOR_HTML_DESC" />
+				<field name="fntc240" type="color" default="#cccccc" label="AU_PLG_GT_FONT_COLOR" description="AU_PLG_GT_FONT_COLOR_HTML_DESC" />
+				<field name="tbgc240" type="color" default="#222222" label="AU_PLG_GT_TITLE_BACKGROUND_COLOR" description="AU_PLG_GT_TITLE_BACKGROUND_COLOR_HTML_DESC" />
+				<field name="ttlc240" type="color" default="#ff9900" label="AU_PLG_GT_TITLE_COLOR" description="AU_PLG_GT_TITLE_COLOR_HTML_DESC" />
+				<field name="bdrc240" type="color" default="#555555" label="AU_PLG_GT_BORDER_COLOR" description="AU_PLG_GT_BORDER_COLOR_HTML_DESC" />
+				<field name="lnkc240" type="color" default="#ffcc00" label="AU_PLG_GT_LINK_COLOR" description="AU_PLG_GT_LINK_COLOR_HTML_DESC" />
+				<field name="blkc240" type="color" default="#222222" label="AU_PLG_GT_BORDER_LINK_COLOR" description="AU_PLG_GT_BORDER_LINK_COLOR_HTML_DESC" />
+				<field name="wight240" type="integer" default="240" label="Wight" first="140" last="999" step="10" description="HTML banner wight (at least 140px)" />
 
-				<field name="blog240" type="radio" class="btn-group btn-group-yesno" default="1" label="Resent blog" description="Show resent blog descriptions">
+				<field name="blog240" type="radio" class="btn-group btn-group-yesno" default="1" label="AU_PLG_GT_SHOW_RESENT_BLOG_POSTS" description="AU_PLG_GT_SHOW_RESENT_BLOG_POSTS_HTML_DESC">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="plonline240" type="radio" class="btn-group btn-group-yesno" default="1" label="Online players" description="Show players online">
+				<field name="plonline240" type="radio" class="btn-group btn-group-yesno" default="1" label="AU_PLG_GT_SHOW_ONLINE_PLAYERS" description="AU_PLG_GT_SHOW_ONLINE_PLAYERS_HTML_DESC">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="onlh240" type="integer" default="100" label="Online block height" first="100" last="999" step="10" description="Height of the online players block (at least 100)" />
-				<field name="pltop240" type="radio" class="btn-group btn-group-yesno" default="1" label="Top players" description="Show player's top ">
+				<field name="onlh240" type="integer" default="100" label="AU_PLG_GT_SHOW_PLAYERS_HEIGHT" first="100" last="999" step="10" description="AU_PLG_GT_SHOW_ONLINE_PLAYERS_HTML_DESC" />
+				<field name="pltop240" type="radio" class="btn-group btn-group-yesno" default="1" label="AU_PLG_GT_SHOW_TOP_PLAYERS" description="AU_PLG_GT_SHOW_TOP_PLAYERS_HTML_DESC">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
-				<field name="toph240" type="integer" default="100" label="Top block height" first="100" last="999" step="10" description="Height of the top players block (at least 100)" />
-				<field name="mapscr240" type="radio" class="btn-group btn-group-yesno" default="1" label="Map screenshot" description="Show map screenshot">
+				<field name="toph240" type="integer" default="100" label="AU_PLG_GT_SHOW_PLAYERS_HEIGHT" first="100" last="999" step="10" description="AU_PLG_GT_SHOW_TOP_PLAYERS_HEIGHT_HTML_DESC" />
+				<field name="mapscr240" type="radio" class="btn-group btn-group-yesno" default="1" label="AU_PLG_GT_SHOW_MAP_SCREENSHOT" description="AU_PLG_GT_SHOW_MAP_SCREENSHOT_HTML_DESC">
 					<option value="0">JNo</option>
 					<option value="1">JYes</option>
 				</field>
