@@ -1,5 +1,5 @@
 # Gametracker plugin for Joomla
-Allows you to add statistic game banners to your Joomla comtent
+Allows you to add statistic game banners to your Joomla content
 
 **Supports:**
 
