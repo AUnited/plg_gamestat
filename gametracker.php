@@ -1,5 +1,5 @@
 <?php
-# @ 2016 Vitaliy Zhukov. All rights reserved. GNU/GPL v3 licence
+# @ 2016 Vitaliy Zhukov. All rights reserved. Apache licence
 
 # Assert file included in Joomla!
 defined( '_JEXEC' ) or die( 'Restricted access' );
