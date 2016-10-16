@@ -68,10 +68,14 @@ class plgContentGameTracker extends JPlugin
         $params = $this->params;
 
         $color = $params->get('style350', 'custom'); //color preset
-        $top_color = $params->get('topc350', '692108');
-        $font_color = $params->get('btmc350', 'FFFFFF');
-        $bottom_color = $params->get('fntc350', '381007');
-        $border_color = $params->get('bdrc350', '000000');
+        $top_color = $params->get('topc350', '#692108');
+        $top_color = $this->ColorNormalise($top_color, 'up');
+        $font_color = $params->get('btmc350', '#ffffff');
+        $font_color = $this->ColorNormalise($font_color, 'up');
+        $bottom_color = $params->get('fntc350', '#381007');
+        $bottom_color = $this->ColorNormalise($bottom_color, 'up');
+        $border_color = $params->get('bdrc350', '#000000');
+        $border_color = $this->ColorNormalise($border_color, 'up');
 
         #logic
     switch ($color)
