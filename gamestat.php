@@ -7,7 +7,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.plugin.plugin' );
 
 #GameTracker Content Plugin
-class plgContentGameTracker extends JPlugin
+class plgContentGameStat extends JPlugin
 {
 	function PluginGameTracker( &$subject, $params )
 	{
